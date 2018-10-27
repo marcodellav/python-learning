@@ -1,0 +1,12 @@
+#!/usr/local/bin/python3
+
+from math import pi
+import os
+pi = float(pi)
+digits = os.getenv("DIGITS")
+if digits:
+    digits = int(digits)
+else:
+    digits = 10
+
+print("%.*f" % (digits, pi))
